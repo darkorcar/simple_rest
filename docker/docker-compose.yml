@@ -4,5 +4,7 @@ services:
   workstation-6:
     image: registry.training.local/workstation-6:${IMAGE_VERSION}
     network_mode: bridge
+    environment:
+      - "SERVICE_NAME=darko"
     ports:
       - "4567"
